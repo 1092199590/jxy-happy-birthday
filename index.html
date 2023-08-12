@@ -109,11 +109,13 @@
         }
 
         .body--ready {
-            background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            /* background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -moz-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -o-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
             background: -ms-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
-            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
+            background: linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%); */
+            background: url('img/background.png');
+            background-repeat: no-repeat;
         }
 
         .text {
@@ -186,6 +188,14 @@
             width: 100%;
             font-weight: bold;
         }
+
+        .background {
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            background-position: center;
+            z-index: 1;
+        }
     </style>
 
 </head>
@@ -195,6 +205,9 @@
     <div class="cs">
         <img src="头像.jpg" id="logo">
     </div>
+    <!-- <div class="background">
+        <img src="img/background.png" id="back">
+    </div> -->
     <canvas class="canvas" width="1820" height="905"></canvas>
     <div class="cs1">
         <p>下划是一些小动物给你的祝福</p>
@@ -735,7 +748,7 @@
                 <div class="slide"><img src="img/cat10.png" />
                     <p>祝你事事顺利</p>
                 </div>
-                <div class="slide"><img src="img/cat12.jpg" />
+                <div class="slide"><img src="img/cat15.jpg" />
                     <p>祝你每天都能一秒入睡</p>
                 </div>
                 <div class="slide"><img src="img/cat13.jpg" />
